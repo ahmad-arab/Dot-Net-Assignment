@@ -11,7 +11,7 @@ This API consists of two controllers:<br />
        - Get(HttpGet): gets a specific Todo entry by it's Id. It's called via: [IpAddress].[Port]/todo/get/{id}<br />
            where {id} is the id of the wanted todo entry.<br />
            Only autenticated users with the role "Admin" can call this method.<br />
-       - Create(HttpPost): Creates a new todo entry and adds it to the list. It's called via [IpAddress].[Port]/todo/create<br />
+       - Create(HttpPost): Creates a new todo entry and adds it to the list. It's called via [IpAddress].[Port]/todo/create <br />
            the body of the request should contain the new Todo entry object as following:<br />
            {<br />
             "date": "2022-04-14T06:52:39.3335412+00:00",<br />
@@ -19,7 +19,7 @@ This API consists of two controllers:<br />
             "discrbtion": "It's grandma birthday"<br />
             }<br />
             Only autenticated users with the role "Admin" can call this method.<br />
-       - Update(HttpPut): updates an existing todo entry and saves chenges to the list. It's called via [IpAddress].[Port]/todo/put/{id}<br />
+       - Update(HttpPut): updates an existing todo entry and saves chenges to the list. It's called via [IpAddress].[Port]/todo/put/{id} <br />
            where {id} is the id of the wanted todo entry.<br />
            the body of the request should contain the new details of the Todo entry object as following:<br />
            {<br />
